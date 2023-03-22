@@ -1,0 +1,337 @@
+config:
+  target: "ws://127.0.0.1:3000/websocket"
+  phases:
+    - duration: 60
+      arrivalCount: 1000
+
+scenarios:
+  - engine: ws
+    name: Echo a string
+    flow:
+      - connect: "{{target}}?rsn={{$randomString()}}&world={{ $randomNumber(0,2) }}"
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6
+      - send: "{{ $randomNumber(1,10000) }}"
+      - think: 0.6

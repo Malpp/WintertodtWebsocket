@@ -1,8 +1,8 @@
 config:
-  target: "ws://127.0.0.1:3000/websocket"
+  target: "wss://wintertodt-websocket-xwgrm.ondigitalocean.app/websocket"
   phases:
     - duration: 60
-      arrivalCount: 1000
+      arrivalCount: 10
 
 scenarios:
   - engine: ws

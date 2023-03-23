@@ -1,0 +1,10 @@
+spec:
+  name: wintertodt-websocket
+  services:
+    - dockerfile_path: Dockerfile
+      git:
+        branch: main
+        repo_clone_url: https://github.com/Malpp/WintertodtWebsocket.git
+      name: wintertodt-websocket
+#      http_port: 3000
+#      instance_size_slug: basic-xxs

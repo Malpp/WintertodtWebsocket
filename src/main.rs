@@ -17,6 +17,8 @@ use serde::{Deserialize, Serialize};
 use tokio::sync::broadcast;
 use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
+use structopt::StructOpt;
+
 const WORLD_SIZE: usize = 280;
 
 // Our shared state
@@ -53,6 +55,12 @@ struct WorldRemove {
     rsn: String,
 }
 
+#[derive(StructOpt)]
+struct ConfigOptions {
+    #[structopt(default_value = "127.0.0.1:3000", env = "WTWS_HOST")]
+    host: String,
+}
+
 #[tokio::main]
 async fn main() {
     tracing_subscriber::registry()
@@ -62,6 +70,8 @@ async fn main() {
         )
         .with(tracing_subscriber::fmt::layer())
         .init();
+
+    let opt = ConfigOptions::from_args();
 
     // Set up application state for use with with_state().
 
@@ -79,7 +89,7 @@ async fn main() {
         .route("/websocket", get(websocket_handler))
         .with_state(app_state);
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from_str(&opt.host).expect("Unable to parse host");
     tracing::debug!("listening on {}", addr);
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
